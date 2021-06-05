@@ -1,0 +1,24 @@
+@charset "UTF-8";
+*{
+		padding:0;
+		margin:0;
+	}
+	label{
+		margin-left:45%;
+	}
+	table{
+		margin-top:3%;
+		margin-left:40%;
+		text-align:center;
+	}
+	table tr th{
+		padding:10px;
+	}
+	table tr td input[type=text],
+	table tr td input[type=password]{
+		width:200px;
+	}
+	table tr td select{
+		width:200px;
+		text-align-last:center;
+	}

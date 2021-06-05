@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+	padding:0;
+	margin:0;
+}
+#header{
+	margin: 5px auto;
+}
+#header td{
+	width:300px;
+	text-align:center;
+}
+#header tr td:hover{
+	background-color:yellow;
+}
+
+#header td p{
+	font-size:20px;
+	color:red;
+	line-height:1.5;
+}
+
+#loginForm{
+	width:800px;
+	margin:5px auto;
+}
+
+#loginForm tr td{
+	text-align:center;
+}
+
+#loginForm tr td input[type=text],
+#loginForm tr td input[type=password]{
+	width:300px;
+}
+
+#loginForm tr td select[name=level]{
+	width:300px;
+	text-align-last:center;
+}
