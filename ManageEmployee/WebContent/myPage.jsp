@@ -31,7 +31,11 @@
 <style>
 	table{
 		text-align:center;
-		margin-left:45%;
+		margin-left:30%;
+	}
+	table tr th,
+	table tr td{
+		padding:10px;
 	}
 </style>
 </head>
@@ -41,8 +45,8 @@
 		<input type="hidden" name="genRe" value="${gender }">
 		<table border="1">
 			<colgroup>
-				<col with="300px">
-				<col with="300px">
+				<col width="300px">
+				<col width="300px">
 			</colgroup>
 			<tr>
 				<td colspan="2">

@@ -15,11 +15,7 @@
 			<form action="" method="post">
 				<jsp:include page="../adminHeader.jsp"/>
 				<jsp:include page="../commonBody/commonBody.jsp"/>
-				<script>
-					if(<%=msg%>){
-						alert(`<%=msg%>`);
-					}
-				</script>
+				<label>${msg}</label>
 			</form>
 		</article>
 	</section>

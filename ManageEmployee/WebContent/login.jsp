@@ -16,7 +16,7 @@
 					<tr>
 						<td></td>
 						<td></td>
-						<td>로그인</td>
+						<td onclick="location.href='login.do';">로그인</td>
 						<td id="access1">사원등록<p>(관리자로 로그인 후 사용가능)</p></td>
 						<td id="access2">마이페이지<p>(로그인 후 사용가능)</p></td>
 					</tr>
@@ -52,6 +52,6 @@
 			</form>
 		</article>
 	</section>
-	<script src="./js/main.js?version=20210605"></script>
+	<script src="./js/main.js"></script>
 </body>
 </html>

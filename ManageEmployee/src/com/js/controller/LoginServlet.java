@@ -38,7 +38,11 @@ public class LoginServlet extends HttpServlet {
 		MyEmpDto dto = (MyEmpDto)session.getAttribute("loginUser");
 		
 		if(dto!=null) {
-			url="./admin/adminMain.jsp";
+			if(dto.getLev().equals("A")) {
+				url="./admin/adminMain.jsp";
+			}else {
+				url="./user/userMain.jsp";
+			}
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
@@ -63,10 +67,14 @@ public class LoginServlet extends HttpServlet {
 		//url 노출 없이 메인 페이지로 이동하기
 		session.setAttribute("loginUser",dto);
 		
-		if(lev.equals("A")) {
-			url = "./admin/adminMain.jsp";
+		if(dto.getUserId()==null) {
+			url = "./login.jsp";
 		}else {
-			url = "./user/userMain.jsp";
+			if(lev.equals("A")) {
+				url = "./admin/adminMain.jsp";
+			}else {
+				url = "./user/userMain.jsp";
+			}
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);

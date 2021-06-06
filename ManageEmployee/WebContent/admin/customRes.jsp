@@ -5,14 +5,22 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%  request.setCharacterEncoding("UTF-8"); %>
 <%  response.setContentType("text/html;charset=UTF-8"); %>
-<c:choose>
-	<c:when test="${newEmp.lev=='A'}">
-		<c:set var="lev" value="운영자"/>
-	</c:when>
-	<c:otherwise>
-		<<c:set var="lev" value="일반회원"/>
-	</c:otherwise>
-</c:choose>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 정보 등록 결과 페이지</title>
+</head>
+<body>
+	<jsp:include page="../adminHeader.jsp"/>
+	<c:choose>
+		<c:when test="${newEmp.lev=='A'}">
+			<c:set var="lev" value="운영자"/>
+		</c:when>
+		<c:otherwise>
+			<c:set var="lev" value="일반회원"/>
+		</c:otherwise>
+	</c:choose>
 
 <c:choose>
 	<c:when test="${newEmp.gender=='1'}">
@@ -22,14 +30,6 @@
 		<<c:set var="gender" value="여자"/>
 	</c:otherwise>
 </c:choose>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>회원 정보 등록 결과 페이지</title>
-</head>
-<body>
-	<jsp:include page="../adminHeader.jsp"/>
 	<form action="login.do" method="get">
 		<table border="1">
 			<colgroup>

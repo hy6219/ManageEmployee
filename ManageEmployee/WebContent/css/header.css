@@ -28,6 +28,7 @@
 
 #loginForm tr td{
 	text-align:center;
+	padding : 10px;
 }
 
 #loginForm tr td input[type=text],
