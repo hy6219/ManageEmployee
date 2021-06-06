@@ -41,8 +41,8 @@
 		<input type="hidden" name="genRe" value="${gender }">
 		<table border="1">
 			<colgroup>
-				<col with="300px">
-				<col with="300px">
+				<col width="300px">
+				<col width="300px">
 			</colgroup>
 			<tr>
 				<td colspan="2">
