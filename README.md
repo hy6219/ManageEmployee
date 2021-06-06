@@ -11,7 +11,8 @@
   3. 마이페이지에서 정보수정 후 마이페이지 재접속 어려움 발견
   4. 기능에만 초점을 맞춘 초안이었기 때문에 디자인적인 요소가 배제되었음
 
-- 버전 0.1 : 2021 . 06. 06
+[진행상황]
+버전 0.1 : 2021 . 06. 06
 ![버전 0.1](https://github.com/hy6219/ManageEmployee_v0.1/blob/master/ManageEmployee_v0.1.gif?raw=true)
 
 -  ver 0.15:
@@ -26,3 +27,7 @@ login.jsp에서 시작하고, login.do로 post요청이 들어왔을 때 url 부
 
   ⚠️ 보완할 점 ⚠️
  1. 디자인을 고려하지 않았기 때문에 반응형 페이지로 구성하는 것까지 고려하기
+
+[진행상황]
+버전 0.15 - 2021. 06. 06
+![버전 0.15](https://github.com/hy6219/ManageEmployee_v0.1/blob/master/ManageEmployee_v0.15.gif?raw=true)
